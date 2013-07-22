@@ -1,0 +1,13 @@
+<div ng-controller="MovieDB.Controller.MoviesController">
+    <h2>My Movies</h2>
+
+    <table class="table">
+        <tr ng-repeat="movie in movies">
+            <td>{{movie.name}}</td>
+            <td>{{movie.year}}</td>
+            <td>
+                <span class="label" ng-repeat="tag in movie.tags">{{tag.name}}</span>
+            </td>
+        </tr>
+    </table>
+</div>

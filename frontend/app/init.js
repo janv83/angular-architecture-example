@@ -1,7 +1,7 @@
 /**
- * MyApp Namespace
+ * MovieDB Namespace
  */
-var MyApp = new (function () {
+var MovieDB = new (function () {
 	"use strict";
 
 	this.Config = {

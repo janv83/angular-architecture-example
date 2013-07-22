@@ -1,18 +1,20 @@
-MyApp.App = angular.module('MyApp', []);
+MovieDB.App = angular.module('MovieDB', [], function() {
 
-MyApp.App.config(['$routeProvider', function($routeProvider) {
+});
+
+MovieDB.App.config(['$routeProvider', function($routeProvider) {
 	/**
 	 * Routes
 	 */
 	$routeProvider.
 		when('/', {
-			templateUrl: MyApp.Config.templateUrl + 'home.html',
-			controller: MyApp.Controller.HomeController
+			templateUrl: MovieDB.Config.templateUrl + 'movies.html',
+			controller: MovieDB.Controller.MoviesController
 		}).
 		otherwise({redirectTo: '/'});
 	}
 ]);
 
-MyApp.App.run([function () {
+MovieDB.App.run([function () {
 	// initialise the app
 }]);

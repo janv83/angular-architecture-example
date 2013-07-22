@@ -1,3 +1,3 @@
-MyApp.Controller.HomeController = function() {
+MovieDB.Controller.HomeController = function() {
 
 };
