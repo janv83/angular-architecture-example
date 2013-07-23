@@ -7,16 +7,20 @@
     <script src="library/js/angular.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="library/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="app/styles/main.css">
 
     <!-- App -->
     <script src="app/init.js"></script>
-    <script src="app/app.js"></script>
 
     <script src="app/services/MoviesService.js"></script>
-
     <script src="app/controller/MoviesController.js"></script>
+    <script src="app/directives/rating.js"></script>
+
+    <script src="app/app.js"></script>
 </head>
 <body ng-app="MovieDB">
-    <ng-view></ng-view>
+    <div class="container">
+        <ng-view></ng-view>
+    </div>
 </body>
 </html>

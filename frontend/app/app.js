@@ -1,7 +1,3 @@
-MovieDB.App = angular.module('MovieDB', [], function() {
-
-});
-
 MovieDB.App.config(['$routeProvider', function($routeProvider) {
 	/**
 	 * Routes
@@ -9,7 +5,7 @@ MovieDB.App.config(['$routeProvider', function($routeProvider) {
 	$routeProvider.
 		when('/', {
 			templateUrl: MovieDB.Config.templateUrl + 'movies.html',
-			controller: MovieDB.Controller.MoviesController
+			controller: 'MoviesController'
 		}).
 		otherwise({redirectTo: '/'});
 	}

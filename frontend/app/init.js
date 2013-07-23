@@ -8,10 +8,7 @@ var MovieDB = new (function () {
 		templateUrl: 'app/views/'
 	};
 
-	this.Controller = {};
-	this.Service = {};
-	this.Interceptor = {};
-	this.Directive = {};
-	this.Filter = {};
-	this.App = {};
+	this.App = angular.module('MovieDB', [], function() {
+
+	});
 })();
