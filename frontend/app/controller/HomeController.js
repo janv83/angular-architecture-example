@@ -1,3 +1,0 @@
-MovieDB.Controller.HomeController = function() {
-
-};
