@@ -1,3 +1,33 @@
 .table.movies .label {
 	margin-left: 4px;
 }
+
+.scrollWrapper {
+    width: 380px;
+    overflow: hidden;
+    float: left;
+    border: 1px solid #444;
+}
+
+.scrollContainer {
+    overflow-y: scroll;
+    width: 400px;
+    height: 300px;
+}
+
+.scrollTrack {
+    width: 20px;
+    float: left;
+    background: #444;
+    border: 1px solid #444;
+    border-left: 0;
+    height: 300px;
+}
+
+.scrollHandle {
+    position: relative;
+    width: 20px;
+    height: 0px;
+    background: #FF6600;
+    cursor: pointer;
+}
