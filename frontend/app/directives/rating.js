@@ -1,11 +1,12 @@
-MovieDB.App.directive('rating', function ()
-{
+MovieDB.App.directive('rating', function () {
 	return {
 		restrict: 'E',
-		templateUrl: MovieDB.Config.templateUrl + 'partials/rating.html',
-		link: function (scope, element, attrs)
-		{
-
+		link: function (scope, element, attrs) {
+            var $star = $('<span class="icon icon-star"></span>');
+            var rating = Math.round(scope.movie.rating);
+            for(var i = 0; i < rating; i++) {
+                element.append($star.clone());
+            }
 		}
 	};
 });

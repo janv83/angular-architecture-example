@@ -9,7 +9,8 @@ MovieDB.App.factory('Movies', function($http, $rootScope) {
                 { name: 'Crime' },
                 { name: 'Drama' },
                 { name: 'Thriller' }
-            ]
+            ],
+            watched: 5
         },
 		{
 			name: 'Fear and Loathing in Las Vegas',
@@ -18,13 +19,18 @@ MovieDB.App.factory('Movies', function($http, $rootScope) {
 			tags: [
 				{ name: 'Adventure' },
 				{ name: 'Comedy' }
-			]
+			],
+            lastTimeWatched: +new Date(),
+            watched: 1
 		}
     ];
 
     return {
         getAll: function() {
             return movies;
+        },
+        getById: function(id) {
+            return movies[id - 1];
         }
     };
 });

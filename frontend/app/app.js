@@ -7,10 +7,10 @@ MovieDB.App.config(['$routeProvider', function($routeProvider) {
 			templateUrl: MovieDB.Config.templateUrl + 'movies.html',
 			controller: 'MoviesController'
 		}).
-        when('/test', {
-			templateUrl: MovieDB.Config.templateUrl + 'test.html',
-			controller: 'TestController'
-		}).
+        when('/movie/:id', {
+            templateUrl: MovieDB.Config.templateUrl + 'movie_view.html',
+            controller: 'MovieViewController'
+        }).
 		otherwise({redirectTo: '/'});
 	}
 ]);

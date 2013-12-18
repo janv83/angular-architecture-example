@@ -1,4 +1,4 @@
-<div ng-controller="MoviesController">
+<div>
     <h2>My Movies</h2>
 
     <table class="table movies">
@@ -7,15 +7,19 @@
                 <th>Name</th>
                 <th>Year</th>
                 <th>Rating</th>
+                <th>watched</th>
                 <th>Genre</th>
             </tr>
         </thead>
         <tbody>
             <tr ng-repeat="movie in movies">
-                <td><a href="">{{movie.name}}</a></td>
+                <td><a href="#/movie/{{$index + 1}}">{{movie.name}}</a></td>
                 <td>{{movie.year}}</td>
                 <td>
                     <rating></rating>
+                </td>
+                <td>
+                    {{movie.watched | watched}}
                 </td>
                 <td>
                     <span class="label" ng-repeat="tag in movie.tags">{{tag.name}}</span>
