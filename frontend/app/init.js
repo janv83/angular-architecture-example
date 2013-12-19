@@ -8,7 +8,5 @@ var MovieDB = new (function () {
 		templateUrl: 'app/views/'
 	};
 
-	this.App = angular.module('MovieDB', [], function() {
-
-	});
+    this.App = angular.module('MovieDB', ['ngRoute']);
 })();
